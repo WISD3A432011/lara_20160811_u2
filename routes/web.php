@@ -25,6 +25,14 @@
 //return'Hello,'.$name;
 //});
 
-Route::get('practice3/{name?}',function($name='add route'){
-return'practice3-'.$name;
+//Route::get('practice3/{name?}',function($name='add route'){
+//return'practice3-'.$name;
+//});
+
+Route::get('hello/{name?}',['as'=>'hello.index',function($name= 'Everybody'){
+    return'Hello,'.$name;
+}]);
+
+Route::get('/',function(){
+    return view('welcome');
 });
