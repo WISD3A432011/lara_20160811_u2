@@ -21,7 +21,10 @@
     //return'Hello,'.$name;
 //});
 
-Route::get('hello/{name?}',function($name='Everybody'){
-return'Hello,'.$name;
-});
+//Route::get('hello/{name?}',function($name='Everybody'){
+//return'Hello,'.$name;
+//});
 
+Route::get('practice3/{name?}',function($name='add route'){
+return'practice3-'.$name;
+});
